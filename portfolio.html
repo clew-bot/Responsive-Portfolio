@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css">
+   
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -30,7 +30,7 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://getmimo.com/">Learn how to code!</a>
+            <a class="nav-link" href="https://getmimo.com/" target="blank">Learn how to code!</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resource Tab</a>
@@ -48,7 +48,8 @@
 
       <!--images start-->
       <div class="container">
-      <div class="row justify-content-md-center">
+        <!--Justify content-md-center to center more text // also added some margin at the top-->
+      <div class="row justify-content-md-center mt-4">
       <h1>My Portfolio</h1>
     </div>
   </div>
@@ -57,28 +58,32 @@
       <h4>Random Images I took until I actually develop a portfolio.</h4>
     </div>
   </div>
-<div class="container">
+<section class="container">
 <div class="row">
-  <div class="col-xs-4 col-md-4">
-    <img src="./assets/Portfolio/tom.jpg" id="bankshot" style="width: 200px; height: 200px";>
-  </div>
-    <div class="col-xs-4 col-md-4">
-    <img src="./assets/Portfolio/ruler.jpg" id="bankshot" style="width: 200px; height: 200px";>
-  </div>
+  <!--Using col-xs-4 for mobile friendly and col-md-4 for tablet friendly-->
+  <figure class="col-xs-4 col-md-4">
+    <!--added own style give it  a width and height to fit the screen-->
+    <img src="./assets/Portfolio/tom.jpg" alt="Tom Nook" id="bankshot" style="width: 200px; height: 200px";>
+  </figure>
+    <figure class="col-xs-4 col-md-4">
+      <!--added and id of 'bankshot' this gives it a shadow effect with a famous squares with rounded edges-->
+    <img src="./assets/Portfolio/ruler.jpg"  alt="Ruler" id="bankshot" style="width: 200px; height: 200px";>
+  </figure>
 </div>
 <div class="row">
-  <div class="col-xs-6 col-md-4">
-    <img src="./assets/Portfolio/pizzahut.jpg" id="bankshot" style="width: 200px; height: 200px";>
+  <figure class="col-xs-6 col-md-4">
+    <img src="./assets/Portfolio/pizzahut.jpg"  alt="Pizza_Hut" id="bankshot" style="width: 200px; height: 200px";>
+  </figure>
+  <figure class="col-xs-6 col-md-4">
+    <img src="./assets/Portfolio/yoshi.jpg"  alt="Yoshi" id="bankshot" style="width: 200px; height: 200px";>
+  </figure>
   </div>
-  <div class="col-xs-6 col-md-4">
-    <img src="./assets/Portfolio/yoshi.jpg" id="bankshot" style="width: 200px; height: 200px";>
-  </div>
-  </div>
-  <div class="row col-xs-4 col-md-4">
-    <img src="./assets/Portfolio/cube.jpg" id="bankshot" style="width: 200px; height: 200px";>
-  </div>
+  <figure class="row col-xs-4 col-md-4">
+    <img src="./assets/Portfolio/cube.jpg"  alt="Rubik's Cube" id="bankshot" style="width: 200px; height: 200px";>
+  </figure>
     
-  </div>
+  </section>
+  <!--containers are helpful in my code here because it contains everything in a little "box" like aspect-->
 
 
 
