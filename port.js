@@ -12,10 +12,11 @@ var author = document.getElementById("author")
             console.log(random);
             console.log(data[random].text);
             var theQuote = data[random].text;
+            console.log(theQuote.split(":"))
             
             //var theAuthor = data[random].author;
             console.log(theQuote)
-            quote.innerHTML = `Random Quote: ${theQuote}`
+            quote.innerHTML = `${theQuote}`
             //author.innerHTML = `Author: ${if(theAuthor === null) {return "Author Unknown"} else {theAuthor}}`
 
         
