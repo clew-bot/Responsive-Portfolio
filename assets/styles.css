@@ -44,3 +44,15 @@ html {
   border-radius: 10px;
   margin-top: 50px;
 }
+/* centering the random quote */
+#randomQuote {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+/* .lead1 {
+  display: none;
+} */
+#clickmee {
+  text-align: center;
+}
